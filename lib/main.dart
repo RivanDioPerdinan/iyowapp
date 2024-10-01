@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iyowapp/core/utils/app_assets.dart';
 
 void main() {
   runApp(const Iyowapp());
@@ -10,6 +11,12 @@ class Iyowapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: Image.asset(Assets.imagesLogo),
+        ),
+      ),
+    );
   }
 }
